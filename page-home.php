@@ -8,12 +8,18 @@ get_header(); ?>
 <div class="motopress-wrapper content-holder clearfix home-content">
 	<?php do_action( 'cherry_before_home_page_content' ); ?>
 	<div class="fluid-container">	
+		<?php 
+			get_template_part("static/static-home-about-us");
+		/*
 		<div class="row">
 			<div data-motopress-type="static" data-motopress-static-file="static/static-slider.php">
-				<?php get_template_part("static/static-slider"); ?>
+				<?php //get_template_part("static/static-slider"); ?>
 			</div>
 		</div>
+		*/ ?>
 	</div>
+
+	<?php /*
 	<div id="opacity-bg"></div>
 	<div id="investor-property">
 		<div class="container">
@@ -23,10 +29,12 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> 
+	
 	<div class="row">
 		<?php get_template_part("static/static-nominated"); ?>
 	</div>
+	*/ ?>
 	<div id="latest-properties">
 		<div class="container">
 			<div class="row">				
