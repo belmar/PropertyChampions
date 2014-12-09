@@ -110,7 +110,7 @@
 <body <?php body_class(); ?>>
 	<div id="motopress-main" class="main-holder">
 		<!--Begin #motopress-main-->
-		<header class="motopress-wrapper header <?php if(is_front_page()){ echo "home-header"; }  ?>">
+		<header class="motopress-wrapper header">
 			<div class="container">
 				<div class="row">
 					<div class="<?php echo cherry_get_layout_class( 'full_width_content' ); ?>" data-motopress-wrapper-file="wrapper/wrapper-header.php" data-motopress-wrapper-type="header" data-motopress-id="<?php echo uniqid() ?>">

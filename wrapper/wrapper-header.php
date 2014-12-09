@@ -8,7 +8,7 @@
 	<div class = "featured-items" data-motopress-type="static" data-motopress-static-file="static/static-featured.php">
 		<?php get_template_part("static/static-featured"); ?>
 	</div>
-	<div class = "<?php if(is_front_page()){echo "home-nav"; } ?>" data-motopress-type="static" data-motopress-static-file="static/static-nav.php">
+	<div class = "" data-motopress-type="static" data-motopress-static-file="static/static-nav.php">
 		<?php get_template_part("static/static-nav"); ?>
 	</div>
 	</div>

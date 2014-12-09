@@ -1,3 +1,4 @@
+		</div>
 		<footer class="motopress-wrapper footer">
 			<div id = "footer-top">
 				<div class="container">
@@ -19,7 +20,7 @@
 			</div>
 		</footer>
 		<!--End #motopress-main-->
-	</div>
+	
 	<div id="back-top-wrapper" class="visible-desktop">
 		<p id="back-top">
 			<?php echo apply_filters( 'cherry_back_top_html', '<a href="#top"><span></span></a>' ); ?>

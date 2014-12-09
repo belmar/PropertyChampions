@@ -24,6 +24,9 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+	<div class="row">
+		<?php get_template_part("static/static-nominated"); ?>
+	</div>
 	<div id="latest-properties">
 		<div class="container">
 			<div class="row">				
@@ -53,6 +56,9 @@ get_header(); ?>
 		<div class="row">
 				<?php get_template_part("loop/loop-page"); ?>
 		</div>
+	</div>
+	<div class="row">
+		<?php get_template_part("static/static-nominated"); ?>
 	</div>
 	<div id="home-bottom-form">
 		<div class="container">

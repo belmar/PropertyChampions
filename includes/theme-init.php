@@ -11,7 +11,7 @@ if ( !function_exists( 'cherry_child_setup' ) ) :
 		// Add support for Post Thumbnails.
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 200, 150, true ); // Normal post thumbnails
-		add_image_size( 'slider-post-thumbnail', 1400, 813, true ); // Slider Thumbnail
+		add_image_size( 'slider-post-thumbnail', 800, 750, true ); // Slider Thumbnail
 		add_image_size( 'slider-thumb', 100, 50, true ); // Slider Small Thumbnail
 
 		// Add default posts and comments RSS feed links to head.

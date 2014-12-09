@@ -9,9 +9,9 @@
 			<?php } ?>
 	<?php } else { ?>
 			<?php if(of_get_option('logo_url') == ''){ ?>
-					<a href="<?php echo home_url(); ?>/" class="logo_h logo_h__img"><img src="<?php if(!is_front_page()){ echo get_stylesheet_directory_uri().'/images/logo.png"'; } else { echo get_stylesheet_directory_uri().'/images/logo-white.png'; } ?> alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('description'); ?>"></a>
+					<a href="<?php echo home_url(); ?>/" class="logo_h logo_h__img"><img src="<?php echo get_stylesheet_directory_uri().'/images/logo.png"';  ?> alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('description'); ?>"></a>
 			<?php } else  { ?>
-					<a href="<?php echo home_url(); ?>/" class="logo_h logo_h__img"><img src="<?php if(!is_front_page()){ echo of_get_option('logo_url', '' ); } else { echo get_stylesheet_directory_uri().'/images/logo-white.png'; } ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('description'); ?>"></a>
+					<a href="<?php echo home_url(); ?>/" class="logo_h logo_h__img"><img src="<?php echo of_get_option('logo_url', '' ); ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('description'); ?>"></a>
 			<?php }?>
 	<?php }
 

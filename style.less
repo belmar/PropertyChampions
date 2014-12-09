@@ -6,7 +6,21 @@
 
 /* #General
 ================================================== */
+html,body {
+	height:100%;
+}
+.main-holder{
+	min-height:100%;
+	margin: 0 auto -136px;
+}
+.main-holder:after {
+  content: "";
+  display: block;
+}
 
+footer, .main-holder:after {
+  min-height: 137px; 
+}
 /* ELEMENTS PAGE */
 body{
 	font-size: 14px;
@@ -90,6 +104,9 @@ dl{
 dd{
 	margin:0;
 }
+.display-none{
+	display:none !important;
+}
 
 /*Unordered List*/
 
@@ -114,7 +131,9 @@ ol {
 ol li li{
     color: #004c92; /* or whatever color you prefer */
 }
-
+ul.dr_tabs li:before{
+	content: none;
+}
 .black{
 	color:#000;
 }
@@ -402,7 +421,9 @@ border-left:6px solid #0094cc;
 	margin:0;
 	font-size:14px;
 }
-
+.motopress-wrapper .title-section{
+	padding: 0;
+}
 .left{
 	padding: 10px 10px 10px 0;
 	float:left;
@@ -557,6 +578,8 @@ color: #0094cc;
 	font-size:10px;
 }
 
+
+
 /*/ Header */
 
 
@@ -603,8 +626,15 @@ border:none;
 .home-nav .sf-menu li.sfHover ul{
 	background: #021b36;
 }
-
-
+#nominated{
+	width: 100%;
+	float: left;
+	height: 238px;
+	text-align: center;
+	background: url(images/PropertyChampion_nominated.png) center center no-repeat #FFF;
+	background-size: 100%;
+	padding: 20px 0;
+}
 #latest-properties{
 	padding: 30px 0 20px;
 	background: #FFF;
@@ -621,6 +651,7 @@ border:none;
 }
 .latest h3{
 	color: #FFF;
+	text-transform: uppercase;
 }
 .latest img{
 	width: 100%;
@@ -696,6 +727,16 @@ border:none;
 	width: 100%;
 	float: left;
 }
+
+.investor input.inline-fname{
+	background: url(images/white-name.png) 20px 10px transparent no-repeat !important;
+}
+.investor input.inline-email {
+	background: url(images/white-mail.png) 12px 10px transparent no-repeat !important;
+}
+.investor input.inline-phone {
+	background: url(images/white-phone.png) 20px 10px transparent no-repeat !important;
+}
 /*/ Homepage */
 
 
@@ -752,6 +793,26 @@ border:none;
 
 /* #Content
 ================================================== */
+.dr-custom-block {
+	border: none;
+	padding: 2%;
+	width: 94%;
+	background: #fff;
+}
+.dr-custom-block th, .dr-custom-block td {
+	border: none !important;
+	padding: 0.5% 1% 0.5% 0 !important;
+}
+.property-title{
+	text-align:left !important;
+}
+.dr-custom-block th {
+	width: 30%;
+	font-weight:normal;
+}
+.dr-custom-block td{
+	color:#0088cc;
+}
 .content-holder{
 	padding: 0;
 }
@@ -900,6 +961,12 @@ h1 i{
 .contact-us .details, .contact-us i{
 	float: left;
 }
+.img-hold {
+	width: 94%;
+	position: relative;
+	padding: 2%;
+	background: #fff;
+}
 /*/ Content */
 
 
@@ -1001,26 +1068,27 @@ padding: 4px 0;
 	min-height: 200px;
 	margin: -200px 0;
 	width:100%;
-	background: #004c92;
+	background: #002c50;
 	opacity: 0.9;
 	z-index: 1;
 }
-
-.motopress-wrapper.content-holder.clearfix.home-content {
-position: relative;
-margin: -130px 0 0;
+.camera_wrap{
+	height: 750px !important;
 }
-
 .camera_caption {
 	width:50% !important;
 	right:-5%;
-	top:35%;
+	top:20%;
 }
 
 .camera_caption h1 {
-color: #fff;
-padding: 0;
-margin: 0;
+	color: #fff;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 65px;
+    font-family: Century Gothic, Arial, sans-serif
 }
 
 .camera_caption div {
@@ -1028,7 +1096,46 @@ background:none;
 }
 
 /*/ Misc */
+@media (max-width: 1024px) {
+	.pull-right{
+		float: none;
+		text-align: center;
+	}
+	#opacity-bg{
+		margin-top: -150px;
+	}
+	.container{
+		padding: 0 10px;
+	}
+}
 @media (max-width: 767px) {
+	.content-holder p{
+		font-size:16px;
+	}
+	#investor-property {
+		margin: -400px 0 0;
+		padding:0;
+	}
+	#opacity-bg{
+		min-height:400px;
+		
+	}
+	.camera_wrap {
+		height: 360px !important;
+	}
+	.camera_caption h1{
+		font-size:24px;
+		line-height:30px;
+	}
+	.camera_caption {
+		width: 100% !important;
+		top: 5%;
+		left: 6% !important;
+	}
+	#featured-property h1{
+		margin-left: 5%;
+		width: 90%;
+	}
 	.logo{
 		text-align:center;
 		float:none;
@@ -1060,7 +1167,8 @@ background:none;
 		text-align:center;
 	}
 	#featured-property p {
-		width: 100%;
+		width: 90%;
+		margin-left:5%;
 		text-align: justify;
 	}
 	button.pull-left {
@@ -1100,6 +1208,9 @@ background:none;
 	
 	.motopress-wrapper.content-holder.clearfix.home-content{
 		margin:0;
+	}
+	textarea:hover, input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="color"]:hover, .uneditable-input {
+		border: 1px solid #ccc;
 	}
 }
 
