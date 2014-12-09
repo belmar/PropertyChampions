@@ -12,3 +12,23 @@
 	Please, You may put custom css here
 ---------------------------------------- */
 
+.property-champion-home-bg{
+	background-image: url(images/home-bg.gif)!important;
+	height:500px!important;
+}
+
+.property-champion-form-input1{
+	background-color: #000 !important;
+	background: #eeeeee url("images/forms/fname.png") no-repeat;
+	background-position: 20px 10px;
+}
+.property-champion-form-input2{
+	background-color: #000 !important;
+	background: #eeeeee url("images/forms/email.png") no-repeat;
+	background-position: 20px 15px;
+}
+.property-champion-form-input3{
+	background-color: #000 !important;
+	background: #eeeeee url("images/forms/phone.png") no-repeat;
+	background-position: 20px 10px;
+}

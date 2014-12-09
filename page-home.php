@@ -10,31 +10,9 @@ get_header(); ?>
 	<div class="fluid-container">	
 		<?php 
 			get_template_part("static/static-home-about-us");
-		/*
-		<div class="row">
-			<div data-motopress-type="static" data-motopress-static-file="static/static-slider.php">
-				<?php //get_template_part("static/static-slider"); ?>
-			</div>
-		</div>
-		*/ ?>
+		?>
 	</div>
-
-	<?php /*
-	<div id="opacity-bg"></div>
-	<div id="investor-property">
-		<div class="container">
-			<div class="row">				
-				<div class="<?php echo apply_filters( 'cherry_home_layout', 'span12' ); ?>" data-motopress-type="static" data-motopress-loop-file="static/static-home-investor.php">						
-					<?php get_template_part("static/static-home-investor"); ?>					
-				</div>
-			</div>
-		</div>
-	</div> 
 	
-	<div class="row">
-		<?php get_template_part("static/static-nominated"); ?>
-	</div>
-	*/ ?>
 	<div id="latest-properties">
 		<div class="container">
 			<div class="row">				
