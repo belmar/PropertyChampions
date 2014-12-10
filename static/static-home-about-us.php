@@ -10,7 +10,7 @@
 								<input type="text" placeholder="Enter Name" name="fname" class="add-form-padding  property-champion-form-input1">
 								<input type="email" placeholder="Enter Email" name="lname" class="add-form-padding  property-champion-form-input2">
 								<input type="text" placeholder="Enter Phone Number" name="lname" class="add-form-padding  property-champion-form-input3">
-								<button class="pull-left" style="text-transform: Uppercase;font-size: 20px;text-align: left;" type="button">Sign Me Up <i class="icon-play-circle"></i></button>
+								<button class="pull-left" style="text-transform: Uppercase;font-size: 20px;text-align: left;" type="button">Sign Me Up <i class="icon-play-circle pull-right"></i></button>
 							</form>
 						</div>
 					</div>
